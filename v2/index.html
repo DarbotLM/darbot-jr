@@ -5,7 +5,7 @@
       
       
       
-        <link rel="canonical" href="https://darbotlm.github.io/darbot-jr/latest/">
+        <link rel="canonical" href="https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/">
       
       
       
@@ -2529,17 +2529,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#news" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📣 News
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#new-features" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2596,21 +2585,14 @@
 
 <div align="center">
 
-<a href="https://join.slack.com/t/swe-bench/shared_invite/zt-36pj9bu5s-o3_yXPZbaH2wVnxnss1EkQ">
-    <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&amp;logo=slack&amp;logoColor=white" alt="Slack">
-</a>
 <a href="https://github.com/DarbotLM/darbot-jr">
     <img alt="GitHub Release" src="https://img.shields.io/github/v/release/DarbotLM/darbot-jr?style=for-the-badge&amp;logo=github&amp;label=GitHub&amp;labelColor=black&amp;color=green">
 </a>
-<a href="https://pypi.org/project/Darbot Jr/">
-    <img src="https://img.shields.io/pypi/v/Darbot Jr?style=for-the-badge&amp;logo=python&amp;logoColor=white&amp;labelColor=black&amp;color=deeppink" alt="PyPI - Version">
-</a>
-
 </div>
 
 <div class="admonition warning">
 <p class="admonition-title">This is Darbot Jr v2</p>
-<p>Read the <a href="https://darbotlm.github.io/darbot-jr/latest/advanced/v2_migration/">migration guide</a>. For the previous version, check out the <a href="https://darbotlm.github.io/darbot-jr/v1/">v1 documentation</a> or the <a href="https://github.com/DarbotLM/darbot-jr/tree/v1">v1 branch</a>.</p>
+<p>Read the <a href="advanced/v2_migration/">migration guide</a>.</p>
 </div>
 <p>In 2024, <a href="https://swebench.com">SWE-bench</a> &amp; <a href="https://swe-agent.com">SWE-agent</a> helped kickstart the coding agent revolution.</p>
 <p>We now ask: <strong>What if our agent was 100x simpler, and still worked nearly as well?</strong></p>
@@ -2658,7 +2640,7 @@ You can see the result on the <a href="https://www.swebench.com/">SWE-bench (bas
   Want it to do something specific like opening a PR?
   Just tell the LM to figure it out rather than spending time to implement it in the agent.</li>
 <li><strong>Executes actions with <code>subprocess.run</code></strong> — every action is completely independent (as opposed to keeping a stateful shell session running).
-  This is <a href="https://darbotlm.github.io/darbot-jr/latest/faq/#why-no-shell-session">a big deal</a> for the stability of the agent, trust me.</li>
+  This is <a href="faq/#why-no-shell-session">a big deal</a> for the stability of the agent, trust me.</li>
 <li><strong>Has a completely linear history</strong> — every step of the agent just appends to the messages that are passed to the LM in the next step and that's it.
   This is great for debugging and understanding what the LM is prompted with.</li>
 </ul>
@@ -2786,15 +2768,6 @@ agent.run("Write a sudoku game")</code></pre>
   </a>
 </div>
 
-<h2 id="news">📣 News</h2>
-<ul>
-<li><a href="https://labs.ramp.com/swebench">Darbot Jr now powers Ramp SWE-Bench</a></li>
-<li><a href="https://deepswe.datacurve.ai/blog#evaluation-harness">Darbot Jr beats Claude Code and Codex on DeepSWE</a></li>
-<li><a href="usage/programbench/">Run Darbot Jr on our new &amp; extremely challenging benchmark, ProgramBench</a></li>
-<li><a href="https://minimal-agent.com/">New tutorial on building minimal AI agents</a></li>
-<li>Nov 19: <a href="https://x.com/KLieret/status/1991164693839270372">Gemini 3 Pro reaches 74% on SWE-bench verified with Darbot Jr!</a></li>
-<li>Aug 19: <a href="https://www.swebench.com/post-250820-jr-roulette.html">New blogpost: Randomly switching between GPT-5 and Sonnet 4 boosts performance</a></li>
-</ul>
 <h2 id="new-features">📣 New features</h2>
 <p>Please check the <a href="https://github.com/DarbotLM/darbot-jr/releases">github release notes</a> for the latest updates.</p>
 <h2 id="documentation-updates">📣 Documentation updates</h2>
@@ -2802,7 +2775,7 @@ agent.run("Write a sudoku game")</code></pre>
 <li>Jul 27: More notes on <a href="models/local_models/">local models</a></li>
 </ul>
 <div class="grid cards">
-  <a href="https://github.com/SWE-agent/SWE-agent/issues/new" class="nav-card-link">
+  <a href="https://github.com/DarbotLM/darbot-jr/issues/new" class="nav-card-link">
     <div class="nav-card">
       <div class="nav-card-header">
         <span class="material-icons nav-card-icon">bug_report</span>
@@ -2812,15 +2785,6 @@ agent.run("Write a sudoku game")</code></pre>
     </div>
   </a>
 
-  <a href="https://join.slack.com/t/swe-bench/shared_invite/zt-36pj9bu5s-o3_yXPZbaH2wVnxnss1EkQ" class="nav-card-link">
-    <div class="nav-card">
-      <div class="nav-card-header">
-        <span class="material-icons nav-card-icon">help</span>
-        <span class="nav-card-title">Open-ended discussions</span>
-      </div>
-      <p class="nav-card-description">Join our Slack!</p>
-    </div>
-  </a>
 </div>
 
 

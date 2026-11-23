@@ -5,7 +5,7 @@
       
       
       
-        <link rel="canonical" href="https://darbotlm.github.io/darbot-jr/latest/advanced/v2_migration/">
+        <link rel="canonical" href="https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/advanced/v2_migration/">
       
       
         <link rel="prev" href="../environments/">
@@ -2832,8 +2832,7 @@
 <div class="admonition danger">
 <p class="admonition-title">Breaking Changes</p>
 <p><strong>Darbot Jr v2.0</strong> brings major improvements but requires migration.
-To stay with v1.x, pin your dependency: <code>Darbot Jr~=1.0</code>.
-See the <a href="https://darbotlm.github.io/darbot-jr/v1/">v1 documentation</a> or the <a href="https://github.com/DarbotLM/darbot-jr/tree/v1">v1 branch on GitHub</a>.</p>
+To stay with v1.x, pin the historical <code>1.x</code> dependency version.</p>
 </div>
 <h2 id="whats-new">What's new</h2>
 <ul>
@@ -2992,7 +2991,7 @@ However, if you use the <a href="https://platform.openai.com/docs/api-reference/
 </table>
 <p><strong>New environment:</strong></p>
 <ul>
-<li><strong><code>swerex_modal</code></strong>: Run environments on Modal (requires <code>pip install Darbot Jr[modal]</code>)</li>
+<li><strong><code>swerex_modal</code></strong>: Run environments on Modal (requires <code>pip install "darbot-jr[modal]"</code>)</li>
 </ul>
 <h2 id="architecture-changes">Architecture changes</h2>
 <ol>
@@ -3010,7 +3009,7 @@ However, if you use the <a href="https://platform.openai.com/docs/api-reference/
 </li>
 </ol>
 <h3 id="protocol-changes">Protocol changes</h3>
-<p>If you want to write a custom Model, Environment or Agent compatible with <code>Darbot Jr</code>, you don't need to subclass anything.
+<p>If you want to write a custom Model, Environment or Agent compatible with <code>darbot-jr</code>, you don't need to subclass anything.
 Rather, Darbot Jr fully uses duck typing with <a href="https://typing.python.org/en/latest/spec/protocol.html">protocols</a>
 (tl;dr: as long as you implement the required methods, you can use any class as a Model, Environment or Agent).
 Config options like <code>--config-class</code> also take full import classes, so you can put your classes wherever you want.</p>

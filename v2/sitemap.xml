@@ -1,203 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/SECURITY/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/SECURITY/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/_footer/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/_footer/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/contributing/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/contributing/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/faq/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/faq/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/quickstart/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/quickstart/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/advanced/control_flow/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/advanced/control_flow/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/advanced/cookbook/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/advanced/cookbook/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/advanced/environments/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/advanced/environments/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/advanced/global_configuration/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/advanced/global_configuration/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/advanced/v2_migration/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/advanced/v2_migration/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/advanced/yaml_configuration/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/advanced/yaml_configuration/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/models/local_models/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/models/local_models/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/models/quickstart/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/models/quickstart/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/models/troubleshooting/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/models/troubleshooting/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/agents/default/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/agents/default/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/agents/interactive/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/agents/interactive/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/environments/bubblewrap/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/environments/bubblewrap/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/environments/contree/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/environments/contree/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/environments/docker/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/environments/docker/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/environments/local/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/environments/local/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/environments/singularity/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/environments/singularity/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/environments/swerex_docker/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/environments/swerex_docker/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/environments/swerex_modal/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/environments/swerex_modal/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/models/extra/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/models/extra/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/models/litellm/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/models/litellm/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/models/litellm_response_toolcall/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/models/litellm_response_toolcall/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/models/openrouter/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/models/openrouter/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/models/overview/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/models/overview/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/models/portkey/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/models/portkey/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/models/portkey_response/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/models/portkey_response/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/models/requesty/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/models/requesty/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/models/test_models/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/models/test_models/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/models/utils/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/models/utils/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/run/config/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/run/config/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/run/hello_world/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/run/hello_world/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/run/inspector/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/run/inspector/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/run/jr/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/run/jr/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/run/jr_extra/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/run/jr_extra/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/run/programbench/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/run/programbench/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/run/swebench/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/run/swebench/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/reference/run/swebench_single/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/reference/run/swebench_single/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/usage/config/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/usage/config/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/usage/inspector/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/usage/inspector/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/usage/jr/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/usage/jr/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/usage/output_files/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/usage/output_files/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/usage/programbench/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/usage/programbench/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/usage/python_bindings/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/usage/python_bindings/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
-         <loc>https://darbotlm.github.io/darbot-jr/latest/usage/swebench/</loc>
+         <loc>https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/usage/swebench/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
 </urlset>

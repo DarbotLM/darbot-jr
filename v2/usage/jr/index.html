@@ -5,7 +5,7 @@
       
       
       
-        <link rel="canonical" href="https://darbotlm.github.io/darbot-jr/latest/usage/jr/">
+        <link rel="canonical" href="https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/usage/jr/">
       
       
         <link rel="prev" href="../../quickstart/">
@@ -2890,7 +2890,7 @@ You can also press <code>Ctrl+C</code> to interrupt the agent at any time, allow
 <div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python3</span>
 
 <span class="sd">"""Run Darbot Jr in your local environment. This is the default executable `jr`."""</span>
-<span class="c1"># Read this first: https://darbotlm.github.io/darbot-jr/latest/usage/jr/  (usage)</span>
+<span class="c1"># Read this first: https://github.com/DarbotLM/darbot-jr/blob/main/docs/usage/jr.md</span>
 
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
@@ -2909,13 +2909,13 @@ You can also press <code>Ctrl+C</code> to interrupt the agent at any time, allow
 <span class="kn">from</span><span class="w"> </span><span class="nn">jrsweagent.utils.serialize</span><span class="w"> </span><span class="kn">import</span> <span class="n">UNSET</span><span class="p">,</span> <span class="n">recursive_merge</span>
 
 <span class="n">DEFAULT_CONFIG_FILE</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">"DARBOT_JR_CONFIG_PATH"</span><span class="p">,</span> <span class="n">builtin_config_dir</span> <span class="o">/</span> <span class="s2">"jr.yaml"</span><span class="p">))</span>
-<span class="n">DEFAULT_OUTPUT_FILE</span> <span class="o">=</span> <span class="n">global_config_dir</span> <span class="o">/</span> <span class="s2">"last_mini_run.traj.json"</span>
+<span class="n">DEFAULT_OUTPUT_FILE</span> <span class="o">=</span> <span class="n">global_config_dir</span> <span class="o">/</span> <span class="s2">"last_jr_run.traj.json"</span>
 
 
 <span class="n">_HELP_TEXT</span> <span class="o">=</span> <span class="s2">"""Run Darbot Jr in your local environment.</span>
 
 <span class="s2">[not dim]</span>
-<span class="s2">More information about the usage: [bold green]https://darbotlm.github.io/darbot-jr/latest/usage/jr/[/bold green]</span>
+<span class="s2">More information about the usage: [bold green]https://github.com/DarbotLM/darbot-jr/blob/main/docs/usage/jr.md[/bold green]</span>
 <span class="s2">[/not dim]</span>
 <span class="s2">"""</span>
 
@@ -3216,7 +3216,7 @@ You can also press <code>Ctrl+C</code> to interrupt the agent at any time, allow
 </code></pre></div>
 </details>
 <div class="grid cards">
-  <a href="https://github.com/SWE-agent/SWE-agent/issues/new" class="nav-card-link">
+  <a href="https://github.com/DarbotLM/darbot-jr/issues/new" class="nav-card-link">
     <div class="nav-card">
       <div class="nav-card-header">
         <span class="material-icons nav-card-icon">bug_report</span>
@@ -3226,15 +3226,6 @@ You can also press <code>Ctrl+C</code> to interrupt the agent at any time, allow
     </div>
   </a>
 
-  <a href="https://join.slack.com/t/swe-bench/shared_invite/zt-36pj9bu5s-o3_yXPZbaH2wVnxnss1EkQ" class="nav-card-link">
-    <div class="nav-card">
-      <div class="nav-card-header">
-        <span class="material-icons nav-card-icon">help</span>
-        <span class="nav-card-title">Open-ended discussions</span>
-      </div>
-      <p class="nav-card-description">Join our Slack!</p>
-    </div>
-  </a>
 </div>
 
 

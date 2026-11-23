@@ -5,7 +5,7 @@
       
       
       
-        <link rel="canonical" href="https://darbotlm.github.io/darbot-jr/latest/usage/programbench/">
+        <link rel="canonical" href="https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/usage/programbench/">
       
       
         <link rel="prev" href="../swebench/">
@@ -3114,7 +3114,7 @@ docker troubleshooting, singularity backend) apply equally to ProgramBench.</p>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">model</span> <span class="o">=</span> <span class="n">get_model</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="n">inst_config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"model"</span><span class="p">,</span> <span class="p">{}))</span>
         <span class="n">env</span> <span class="o">=</span> <span class="n">get_environment</span><span class="p">(</span><span class="n">inst_config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"environment"</span><span class="p">,</span> <span class="p">{}),</span> <span class="n">default_type</span><span class="o">=</span><span class="s2">"docker"</span><span class="p">)</span>
-        <span class="n">env</span><span class="o">.</span><span class="n">execute</span><span class="p">({</span><span class="s2">"command"</span><span class="p">:</span> <span class="s1">'git config user.name "Darbot Jr" &amp;&amp; git config user.email "Darbot Jr@proton.me"'</span><span class="p">})</span>
+        <span class="n">env</span><span class="o">.</span><span class="n">execute</span><span class="p">({</span><span class="s2">"command"</span><span class="p">:</span> <span class="s1">'git config user.name "Darbot Jr" &amp;&amp; git config user.email "darbot-jr@proton.me"'</span><span class="p">})</span>
 
         <span class="n">agent_config</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">inst_config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"agent"</span><span class="p">,</span> <span class="p">{}))</span>
         <span class="n">agent_config</span><span class="p">[</span><span class="s2">"output_path"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">instance_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">iid</span><span class="si">}</span><span class="s2">.traj.json"</span><span class="p">)</span>
@@ -3222,7 +3222,7 @@ docker troubleshooting, singularity backend) apply equally to ProgramBench.</p>
 </code></pre></div>
 </details>
 <div class="grid cards">
-  <a href="https://github.com/SWE-agent/SWE-agent/issues/new" class="nav-card-link">
+  <a href="https://github.com/DarbotLM/darbot-jr/issues/new" class="nav-card-link">
     <div class="nav-card">
       <div class="nav-card-header">
         <span class="material-icons nav-card-icon">bug_report</span>
@@ -3232,15 +3232,6 @@ docker troubleshooting, singularity backend) apply equally to ProgramBench.</p>
     </div>
   </a>
 
-  <a href="https://join.slack.com/t/swe-bench/shared_invite/zt-36pj9bu5s-o3_yXPZbaH2wVnxnss1EkQ" class="nav-card-link">
-    <div class="nav-card">
-      <div class="nav-card-header">
-        <span class="material-icons nav-card-icon">help</span>
-        <span class="nav-card-title">Open-ended discussions</span>
-      </div>
-      <p class="nav-card-description">Join our Slack!</p>
-    </div>
-  </a>
 </div>
 
 

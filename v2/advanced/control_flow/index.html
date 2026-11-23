@@ -5,7 +5,7 @@
       
       
       
-        <link rel="canonical" href="https://darbotlm.github.io/darbot-jr/latest/advanced/control_flow/">
+        <link rel="canonical" href="https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/advanced/control_flow/">
       
       
         <link rel="prev" href="../../usage/python_bindings/">
@@ -2602,7 +2602,7 @@
 <li><a href="https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/agents/default.py">Read on GitHub</a></li>
 <li><a href="../../reference/agents/default/">API reference</a></li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="sd">"""Basic agent class. See https://darbotlm.github.io/darbot-jr/latest/advanced/control_flow/ for visual explanation</span>
+<div class="highlight"><pre><span></span><code><span class="sd">"""Basic agent class. See the control-flow guide in docs/advanced/control_flow.md for a visual explanation</span>
 <span class="sd">or https://minimal-agent.com for a tutorial on the basic building principles.</span>
 <span class="sd">"""</span>
 
@@ -2774,12 +2774,12 @@
                     <span class="s2">"agent"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">model_dump</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">"json"</span><span class="p">),</span>
                     <span class="s2">"agent_type"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__module__</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
                 <span class="p">},</span>
-                <span class="s2">"mini_version"</span><span class="p">:</span> <span class="n">__version__</span><span class="p">,</span>
+                <span class="s2">"jr_version"</span><span class="p">:</span> <span class="n">__version__</span><span class="p">,</span>
                 <span class="s2">"exit_status"</span><span class="p">:</span> <span class="n">last_extra</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"exit_status"</span><span class="p">,</span> <span class="s2">""</span><span class="p">),</span>
                 <span class="s2">"submission"</span><span class="p">:</span> <span class="n">last_extra</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"submission"</span><span class="p">,</span> <span class="s2">""</span><span class="p">),</span>
             <span class="p">},</span>
             <span class="s2">"messages"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">messages</span><span class="p">,</span>
-            <span class="s2">"trajectory_format"</span><span class="p">:</span> <span class="s2">"Darbot Jr-1.1"</span><span class="p">,</span>
+            <span class="s2">"trajectory_format"</span><span class="p">:</span> <span class="s2">"jr-1.1"</span><span class="p">,</span>
         <span class="p">}</span>
         <span class="k">return</span> <span class="n">recursive_merge</span><span class="p">(</span><span class="n">agent_data</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">serialize</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">serialize</span><span class="p">(),</span> <span class="o">*</span><span class="n">extra_dicts</span><span class="p">)</span>
 
@@ -2848,7 +2848,7 @@ This uses exceptions that inherit from <code>InterruptAgentFlow</code>. All thes
 </code></pre></div>
 <p>Using exceptions for the control flow is a lot easier than passing around flags and states, especially when extending or subclassing the agent.</p>
 <div class="grid cards">
-  <a href="https://github.com/SWE-agent/SWE-agent/issues/new" class="nav-card-link">
+  <a href="https://github.com/DarbotLM/darbot-jr/issues/new" class="nav-card-link">
     <div class="nav-card">
       <div class="nav-card-header">
         <span class="material-icons nav-card-icon">bug_report</span>
@@ -2858,15 +2858,6 @@ This uses exceptions that inherit from <code>InterruptAgentFlow</code>. All thes
     </div>
   </a>
 
-  <a href="https://join.slack.com/t/swe-bench/shared_invite/zt-36pj9bu5s-o3_yXPZbaH2wVnxnss1EkQ" class="nav-card-link">
-    <div class="nav-card">
-      <div class="nav-card-header">
-        <span class="material-icons nav-card-icon">help</span>
-        <span class="nav-card-title">Open-ended discussions</span>
-      </div>
-      <p class="nav-card-description">Join our Slack!</p>
-    </div>
-  </a>
 </div>
 
 

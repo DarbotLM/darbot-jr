@@ -5,7 +5,7 @@
       
       
       
-        <link rel="canonical" href="https://darbotlm.github.io/darbot-jr/latest/usage/output_files/">
+        <link rel="canonical" href="https://github.com/DarbotLM/darbot-jr/tree/main/docs/latest/usage/output_files/">
       
       
         <link rel="prev" href="../inspector/">
@@ -2682,7 +2682,7 @@
 <h2 id="trajectory-files-trajjson">Trajectory files (<code>.traj.json</code>)</h2>
 <div class="admonition warning">
 <p class="admonition-title">v2.0 format changes</p>
-<p>The output format changed in v2.0 (<code>trajectory_format: Darbot Jr-1.1</code>). See the <a href="../../advanced/v2_migration/">v2 migration guide</a> for more information.</p>
+<p>The output format changed in v2.0 (<code>trajectory_format: jr-1.1</code>). See the <a href="../../advanced/v2_migration/">v2 migration guide</a> for more information.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Viewing trajectory files</p>
@@ -2704,7 +2704,7 @@
 <span class="w">      </span><span class="nt">"environment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">},</span><span class="w">  </span><span class="c1">// environment configuration</span>
 <span class="w">      </span><span class="nt">"environment_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jrsweagent.environments.local.LocalEnvironment"</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">"mini_version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2.0.0"</span><span class="p">,</span><span class="w">  </span><span class="c1">// version of Darbot Jr used</span>
+<span class="w">    </span><span class="nt">"jr_version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2.0.0"</span><span class="p">,</span><span class="w">  </span><span class="c1">// version of Darbot Jr used</span>
 <span class="w">    </span><span class="nt">"exit_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Submitted"</span><span class="p">,</span><span class="w">  </span><span class="c1">// final status (Submitted, LimitsExceeded, etc.)</span>
 <span class="w">    </span><span class="nt">"submission"</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w">  </span><span class="c1">// final output/patch submitted by the agent (if any)</span>
 <span class="w">  </span><span class="p">},</span>
@@ -2714,7 +2714,7 @@
 <span class="w">    </span><span class="p">{</span><span class="nt">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"assistant"</span><span class="p">,</span><span class="w"> </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="p">},</span>
 <span class="w">    </span><span class="err">...</span>
 <span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">"trajectory_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Darbot Jr-1.1"</span><span class="w">  </span><span class="c1">// format version identifier</span>
+<span class="w">  </span><span class="nt">"trajectory_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jr-1.1"</span><span class="w">  </span><span class="c1">// format version identifier</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Messages follow the <a href="https://platform.openai.com/docs/api-reference/chat">OpenAI chat format</a> with an additional <code>extra</code> field for Darbot Jr metadata. Models may add other fields to messages (e.g., <code>tool_calls</code>, <code>reasoning_content</code>).</p>
@@ -2772,7 +2772,7 @@
 <span class="p">}</span>
 </code></pre></div>
 <div class="grid cards">
-  <a href="https://github.com/SWE-agent/SWE-agent/issues/new" class="nav-card-link">
+  <a href="https://github.com/DarbotLM/darbot-jr/issues/new" class="nav-card-link">
     <div class="nav-card">
       <div class="nav-card-header">
         <span class="material-icons nav-card-icon">bug_report</span>
@@ -2782,15 +2782,6 @@
     </div>
   </a>
 
-  <a href="https://join.slack.com/t/swe-bench/shared_invite/zt-36pj9bu5s-o3_yXPZbaH2wVnxnss1EkQ" class="nav-card-link">
-    <div class="nav-card">
-      <div class="nav-card-header">
-        <span class="material-icons nav-card-icon">help</span>
-        <span class="nav-card-title">Open-ended discussions</span>
-      </div>
-      <p class="nav-card-description">Join our Slack!</p>
-    </div>
-  </a>
 </div>
 
 
