@@ -47,7 +47,7 @@ Here's a few popular models and the required API keys:
 
 [bold yellow]You can leave any setting blank to skip it.[/bold yellow]
 
-More information at https://darbotlm.github.io/darbot-jr/latest/quickstart/
+More information at https://github.com/DarbotLM/darbot-jr/blob/main/docs/quickstart.md
 To find the best model, check the leaderboard at https://swebench.com/
 """
 

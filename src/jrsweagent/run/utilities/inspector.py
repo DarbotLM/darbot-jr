@@ -2,7 +2,7 @@
 """
 Simple trajectory inspector for browsing agent conversation trajectories.
 
-More information about the usage: [bold green] https://darbotlm.github.io/darbot-jr/latest/usage/inspector/ [/bold green].
+More information about the usage: [bold green] https://github.com/DarbotLM/darbot-jr/blob/main/docs/usage/inspector.md [/bold green].
 """
 
 import json

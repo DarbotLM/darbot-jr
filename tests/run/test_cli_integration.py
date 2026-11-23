@@ -94,7 +94,7 @@ def test_jr_command_calls_run_interactive():
         mock_agent.run.assert_called_once_with("Test task")
 
 
-def test_mini_calls_prompt_when_no_task_provided():
+def test_jr_calls_prompt_when_no_task_provided():
     """Test that jr calls prompt when no task is provided."""
     with (
         patch("jrsweagent.run.jr.configure_if_first_time"),
@@ -138,7 +138,7 @@ def test_mini_calls_prompt_when_no_task_provided():
         mock_agent.run.assert_called_once_with("User provided task")
 
 
-def test_mini_with_explicit_model():
+def test_jr_with_explicit_model():
     """Test that jr works with explicitly provided model."""
     with (
         patch("jrsweagent.run.jr.configure_if_first_time"),
@@ -298,7 +298,7 @@ def test_cost_limit_zero_is_preserved():
         assert mock_get_agent.call_args.args[2]["cost_limit"] == 0
 
 
-def test_mini_help():
+def test_jr_help():
     """Test that jr --help works correctly."""
     result = subprocess.run(
         [sys.executable, "-m", "jrsweagent", "--help"],
@@ -319,7 +319,7 @@ def test_mini_help():
     assert "--output" in clean_output
 
 
-def test_mini_help_with_typer_runner():
+def test_jr_help_with_typer_runner():
     """Test help functionality using typer's test runner."""
     from typer.testing import CliRunner
 
@@ -351,7 +351,7 @@ def test_python_m_jrsweagent_help():
     assert "Darbot Jr" in result.stdout
 
 
-def test_mini_script_help():
+def test_jr_script_help():
     """Test that the jr script entry point help works."""
     result = subprocess.run(
         ["jr", "--help"],

@@ -11,7 +11,7 @@ This environment executes commands in [Modal](https://modal.com) sandboxes using
 
 1. Install the full dependencies:
    ```bash
-   pip install "Darbot Jr[full]"
+   pip install "darbot-jr[full]"
    ```
 
 2. Set up Modal authentication:

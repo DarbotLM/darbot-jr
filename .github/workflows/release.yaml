@@ -96,26 +96,26 @@ jobs:
         echo "Waiting for package to be available on PyPI..."
         sleep 60
 
-    - name: Test pipx run Darbot Jr --help (Test PyPI)
+    - name: Test pipx run darbot-jr --help (Test PyPI)
       if: ${{ github.event.inputs.test_pypi == 'true' }}
-      run: pipx run --pip-args="--index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/" Darbot Jr --help
+      run: pipx run --pip-args="--index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/" darbot-jr --help
 
-    - name: Test pipx run Darbot Jr --help (PyPI)
+    - name: Test pipx run darbot-jr --help (PyPI)
       if: ${{ github.event.inputs.test_pypi != 'true' }}
-      run: pipx run Darbot Jr --help
+      run: pipx run darbot-jr --help
 
-    - name: Test uvx Darbot Jr --help (Test PyPI)
+    - name: Test uvx darbot-jr --help (Test PyPI)
       if: ${{ github.event.inputs.test_pypi == 'true' }}
-      run: uvx --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ Darbot Jr --help
+      run: uvx --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ darbot-jr --help
 
-    - name: Test uvx Darbot Jr --help (PyPI)
+    - name: Test uvx darbot-jr --help (PyPI)
       if: ${{ github.event.inputs.test_pypi != 'true' }}
-      run: uvx Darbot Jr --help
+      run: uvx darbot-jr --help
 
     - name: Test pip install and CLI commands (Test PyPI)
       if: ${{ github.event.inputs.test_pypi == 'true' }}
       run: |
-        uv pip install --python ${Python_ROOT_DIR} --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ Darbot Jr
+        uv pip install --python ${Python_ROOT_DIR} --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ darbot-jr
         jr --help
         jr-extra --help
         jr-e --help
@@ -123,7 +123,7 @@ jobs:
     - name: Test pip install and CLI commands (PyPI)
       if: ${{ github.event.inputs.test_pypi != 'true' }}
       run: |
-        uv pip install --python ${Python_ROOT_DIR} Darbot Jr
+        uv pip install --python ${Python_ROOT_DIR} darbot-jr
         jr --help
         jr-extra --help
         jr-e --help

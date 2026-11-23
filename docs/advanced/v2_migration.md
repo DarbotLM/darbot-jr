@@ -3,8 +3,7 @@
 !!! danger "Breaking Changes"
 
     **Darbot Jr v2.0** brings major improvements but requires migration.
-    To stay with v1.x, pin your dependency: `Darbot Jr~=1.0`.
-    See the [v1 documentation](https://darbotlm.github.io/darbot-jr/v1/) or the [v1 branch on GitHub](https://github.com/DarbotLM/darbot-jr/tree/v1).
+    To stay with v1.x, pin the historical `1.x` dependency version.
 
 ## What's new
 
@@ -159,7 +158,7 @@ In other words: the exact message structure depends on the model you use.
 
 **New environment:**
 
-- **`swerex_modal`**: Run environments on Modal (requires `pip install Darbot Jr[modal]`)
+- **`swerex_modal`**: Run environments on Modal (requires `pip install "darbot-jr[modal]"`)
 
 ## Architecture changes
 
@@ -173,7 +172,7 @@ In other words: the exact message structure depends on the model you use.
 
 ### Protocol changes
 
-If you want to write a custom Model, Environment or Agent compatible with `Darbot Jr`, you don't need to subclass anything.
+If you want to write a custom Model, Environment or Agent compatible with `darbot-jr`, you don't need to subclass anything.
 Rather, Darbot Jr fully uses duck typing with [protocols](https://typing.python.org/en/latest/spec/protocol.html)
 (tl;dr: as long as you implement the required methods, you can use any class as a Model, Environment or Agent).
 Config options like `--config-class` also take full import classes, so you can put your classes wherever you want.

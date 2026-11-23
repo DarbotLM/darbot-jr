@@ -8,7 +8,6 @@ An independently maintained, compact AI software engineering agent.
 
 [![Repository](https://img.shields.io/badge/Repository-GitHub-24292e?style=for-the-badge&logo=github)](https://github.com/DarbotLM/darbot-jr)
 [![Docs](https://img.shields.io/badge/Docs-green?style=for-the-badge&logo=materialformkdocs&logoColor=white)](https://github.com/DarbotLM/darbot-jr/tree/main/docs)
-[![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)](https://join.slack.com/t/swe-bench/shared_invite/zt-36pj9bu5s-o3_yXPZbaH2wVnxnss1EkQ)
 
 > [!WARNING]
 > This is **Darbot Jr v2**. Read the [migration guide](docs/advanced/v2_migration.md).
@@ -46,7 +45,7 @@ In fact, the `jr` agent
   Great for debugging & fine-tuning.
 - **Executes actions with `subprocess.run`** — every action is completely independent (as opposed to keeping a stateful shell session running).
   This makes it trivial to execute the actions in sandboxes (literally just switch out `subprocess.run` with `docker exec`) and to
-  scale up effortlessly. Seriously, this is [a big deal](https://darbotlm.github.io/darbot-jr/latest/faq/#why-no-shell-session), trust me.
+  scale up effortlessly. Seriously, this is [a big deal](docs/faq.md#why-no-shell-session), trust me.
 
 This makes it perfect as a baseline system and for a system that puts the language model (rather than
 the agent scaffold) in the middle of our attention.
@@ -72,7 +71,7 @@ Unlike other agents (including our own [swe-agent](https://swe-agent.com/latest/
   Want it to do something specific like opening a PR?
   Just tell the LM to figure it out rather than spending time to implement it in the agent.
 - **Executes actions with `subprocess.run`** — every action is completely independent (as opposed to keeping a stateful shell session running).
-  This is [a big deal](https://darbotlm.github.io/darbot-jr/latest/faq/#why-no-shell-session) for the stability of the agent, trust me.
+  This is [a big deal](docs/faq.md#why-no-shell-session) for the stability of the agent, trust me.
 - **Has a completely linear history** — every step of the agent just appends to the messages that are passed to the LM in the next step and that's it.
   This is great for debugging and understanding what the LM is prompted with.
 
@@ -104,10 +103,10 @@ What you get with both
 <table>
 <tr>
 <td width="50%">
-<a href="https://darbotlm.github.io/darbot-jr/latest/usage/jr/"><strong>CLI</strong></a> (<code>jr</code>)
+<a href="docs/usage/jr.md"><strong>CLI</strong></a> (<code>jr</code>)
 </td>
 <td>
-<a href="https://darbotlm.github.io/darbot-jr/latest/usage/swebench/"><strong>Batch inference</strong></a>
+<a href="docs/usage/swebench.md"><strong>Batch inference</strong></a>
 </td>
 </tr>
 <tr>
@@ -124,10 +123,10 @@ What you get with both
 </tr>
 <tr>
 <td>
-<a href="https://darbotlm.github.io/darbot-jr/latest/usage/inspector/"><strong>Trajectory browser</strong></a>
+<a href="docs/usage/inspector.md"><strong>Trajectory browser</strong></a>
 </td>
 <td>
-<a href="https://darbotlm.github.io/darbot-jr/latest/advanced/cookbook/"><strong>Python bindings</strong></a>
+<a href="docs/advanced/cookbook.md"><strong>Python bindings</strong></a>
 </td>
 </tr>
 <tr>
@@ -173,15 +172,15 @@ cd darbot-jr && pip install -e .
 jr  # run the CLI
 ```
 
-Read more in our [documentation](https://darbotlm.github.io/darbot-jr/latest/):
+Read more in our [documentation](docs/):
 
-* [Quick start guide](https://darbotlm.github.io/darbot-jr/latest/quickstart/)
-* [Using the `jr` CLI](https://darbotlm.github.io/darbot-jr/latest/usage/jr/)
-* [Global configuration](https://darbotlm.github.io/darbot-jr/latest/advanced/global_configuration/)
-* [Yaml configuration files](https://darbotlm.github.io/darbot-jr/latest/advanced/yaml_configuration/)
-* [Power up with the cookbook](https://darbotlm.github.io/darbot-jr/latest/advanced/cookbook/)
-* [FAQ](https://darbotlm.github.io/darbot-jr/latest/faq/)
-* [Contribute!](https://darbotlm.github.io/darbot-jr/latest/contributing/)
+* [Quick start guide](docs/quickstart.md)
+* [Using the `jr` CLI](docs/usage/jr.md)
+* [Global configuration](docs/advanced/global_configuration.md)
+* [Yaml configuration files](docs/advanced/yaml_configuration.md)
+* [Power up with the cookbook](docs/advanced/cookbook.md)
+* [FAQ](docs/faq.md)
+* [Contribute!](docs/contributing.md)
 
 ## Attribution
 

@@ -7,7 +7,7 @@
         Use pip to install `jr` in your current environment:
 
         ```bash
-        pip install Darbot Jr
+        pip install darbot-jr
         ```
 
         And try our command line interface
@@ -25,14 +25,14 @@
         Quickly install + run:
 
         ```bash
-        uvx Darbot Jr  # CLI
-        uvx --from Darbot Jr jr-extra  # extra utilities
+        uvx darbot-jr  # CLI
+        uvx --from darbot-jr jr-extra  # extra utilities
         ```
 
         Permanently install
 
         ```bash
-        uv tool install Darbot Jr
+        uv tool install darbot-jr
         # then
         jr  # CLI
         jr-extra  # extra utilities
@@ -47,15 +47,15 @@
 
         ```bash
         # CLI
-        pipx run Darbot Jr
+        pipx run darbot-jr
         # Extra utilities
-        pipx run --spec Darbot Jr jr-extra
+        pipx run --spec darbot-jr jr-extra
         ```
 
         or for a persistent installation (recommended):
 
         ```bash
-        pipx install Darbot Jr
+        pipx install darbot-jr
         # then
         jr  # CLI
         jr-extra  # extra utilities
@@ -69,7 +69,7 @@
 
         ```bash
         git clone https://github.com/DarbotLM/darbot-jr.git
-        cd Darbot Jr
+        cd darbot-jr
         pip install -e .
         ```
 

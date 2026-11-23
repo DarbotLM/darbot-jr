@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """Run Darbot Jr on SWE-bench instances in batch mode."""
-# Read this first: https://darbotlm.github.io/darbot-jr/latest/usage/swebench/  (usage docs)
+# Read this first: https://github.com/DarbotLM/darbot-jr/blob/main/docs/usage/swebench.md
 
 import concurrent.futures
 import json
@@ -28,7 +28,7 @@ from jrsweagent.utils.serialize import UNSET, recursive_merge
 _HELP_TEXT = """Run Darbot Jr on SWEBench instances.
 
 [not dim]
-More information about the usage: [bold green]https://darbotlm.github.io/darbot-jr/latest/usage/swebench/[/bold green]
+More information about the usage: [bold green]https://github.com/DarbotLM/darbot-jr/blob/main/docs/usage/swebench.md[/bold green]
 [/not dim]
 """
 

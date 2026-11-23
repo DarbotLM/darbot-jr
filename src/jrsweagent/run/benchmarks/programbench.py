@@ -84,7 +84,7 @@ def process_instance(
     try:
         model = get_model(config=inst_config.get("model", {}))
         env = get_environment(inst_config.get("environment", {}), default_type="docker")
-        env.execute({"command": 'git config user.name "Darbot Jr" && git config user.email "Darbot Jr@proton.me"'})
+        env.execute({"command": 'git config user.name "Darbot Jr" && git config user.email "darbot-jr@proton.me"'})
 
         agent_config = dict(inst_config.get("agent", {}))
         agent_config["output_path"] = str(instance_dir / f"{iid}.traj.json")

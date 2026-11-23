@@ -7,21 +7,14 @@
 
 <div align="center">
 
-<a href="https://join.slack.com/t/swe-bench/shared_invite/zt-36pj9bu5s-o3_yXPZbaH2wVnxnss1EkQ">
-    <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white" alt="Slack">
-</a>
 <a href="https://github.com/DarbotLM/darbot-jr">
     <img alt="GitHub Release" src="https://img.shields.io/github/v/release/DarbotLM/darbot-jr?style=for-the-badge&logo=github&label=GitHub&labelColor=black&color=green" alt="GitHub Release">
 </a>
-<a href="https://pypi.org/project/Darbot Jr/">
-    <img src="https://img.shields.io/pypi/v/Darbot Jr?style=for-the-badge&logo=python&logoColor=white&labelColor=black&color=deeppink" alt="PyPI - Version">
-</a>
-
 </div>
 
 !!! warning "This is Darbot Jr v2"
 
-    Read the [migration guide](https://darbotlm.github.io/darbot-jr/latest/advanced/v2_migration/). For the previous version, check out the [v1 documentation](https://darbotlm.github.io/darbot-jr/v1/) or the [v1 branch](https://github.com/DarbotLM/darbot-jr/tree/v1).
+    Read the [migration guide](advanced/v2_migration.md).
 
 In 2024, [SWE-bench](https://swebench.com) & [SWE-agent](https://swe-agent.com) helped kickstart the coding agent revolution.
 
@@ -73,7 +66,7 @@ We now ask: **What if our agent was 100x simpler, and still worked nearly as wel
       Want it to do something specific like opening a PR?
       Just tell the LM to figure it out rather than spending time to implement it in the agent.
     - **Executes actions with `subprocess.run`** — every action is completely independent (as opposed to keeping a stateful shell session running).
-      This is [a big deal](https://darbotlm.github.io/darbot-jr/latest/faq/#why-no-shell-session) for the stability of the agent, trust me.
+      This is [a big deal](faq.md#why-no-shell-session) for the stability of the agent, trust me.
     - **Has a completely linear history** — every step of the agent just appends to the messages that are passed to the LM in the next step and that's it.
       This is great for debugging and understanding what the LM is prompted with.
 
@@ -206,15 +199,6 @@ agent.run("Write a sudoku game")</code></pre>
     </div>
   </a>
 </div>
-
-## 📣 News
-
-* [Darbot Jr now powers Ramp SWE-Bench](https://labs.ramp.com/swebench)
-* [Darbot Jr beats Claude Code and Codex on DeepSWE](https://deepswe.datacurve.ai/blog#evaluation-harness)
-* [Run Darbot Jr on our new & extremely challenging benchmark, ProgramBench](usage/programbench.md)
-* [New tutorial on building minimal AI agents](https://minimal-agent.com/)
-* Nov 19: [Gemini 3 Pro reaches 74% on SWE-bench verified with Darbot Jr!](https://x.com/KLieret/status/1991164693839270372)
-* Aug 19: [New blogpost: Randomly switching between GPT-5 and Sonnet 4 boosts performance](https://www.swebench.com/post-250820-jr-roulette.html)
 
 ## 📣 New features
 

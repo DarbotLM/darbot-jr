@@ -8,7 +8,7 @@
 
 !!! warning "v2.0 format changes"
 
-    The output format changed in v2.0 (`trajectory_format: Darbot Jr-1.1`). See the [v2 migration guide](../advanced/v2_migration.md) for more information.
+    The output format changed in v2.0 (`trajectory_format: jr-1.1`). See the [v2 migration guide](../advanced/v2_migration.md) for more information.
 
 !!! tip "Viewing trajectory files"
 
@@ -33,7 +33,7 @@ Trajectory files contain the full history of an agent run, including all message
       "environment": { ... },  // environment configuration
       "environment_type": "jrsweagent.environments.local.LocalEnvironment"
     },
-    "mini_version": "2.0.0",  // version of Darbot Jr used
+    "jr_version": "2.0.0",  // version of Darbot Jr used
     "exit_status": "Submitted",  // final status (Submitted, LimitsExceeded, etc.)
     "submission": "..."  // final output/patch submitted by the agent (if any)
   },
@@ -43,7 +43,7 @@ Trajectory files contain the full history of an agent run, including all message
     {"role": "assistant", "content": "..."},
     ...
   ],
-  "trajectory_format": "Darbot Jr-1.1"  // format version identifier
+  "trajectory_format": "jr-1.1"  // format version identifier
 }
 ```
 

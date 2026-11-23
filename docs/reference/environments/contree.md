@@ -19,7 +19,7 @@ This environment executes commands in [ConTree](https://contree.dev) sandboxes u
 
 1. Install the dependencies:
    ```bash
-   pip install "Darbot Jr[contree]"
+   pip install "darbot-jr[contree]"
    ```
 
 2. Set up ConTree token and base_url:

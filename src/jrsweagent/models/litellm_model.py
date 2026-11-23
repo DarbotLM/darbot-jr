@@ -30,7 +30,7 @@ class LitellmModelConfig(BaseModel):
     model_kwargs: dict[str, Any] = {}
     """Additional arguments passed to the API."""
     litellm_model_registry: Path | str | None = os.getenv("LITELLM_MODEL_REGISTRY_PATH")
-    """Model registry for cost tracking and model metadata. See the local model guide (https://darbotlm.github.io/darbot-jr/latest/models/local_models/) for more details."""
+    """Model registry for cost tracking and model metadata. See the local model guide in docs/models/local_models.md."""
     set_cache_control: Literal["default_end"] | None = None
     """Set explicit cache control markers, for example for Anthropic models"""
     cost_tracking: Literal["default", "ignore_errors"] = os.getenv("DARBOT_JR_COST_TRACKING", "default")

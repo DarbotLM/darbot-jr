@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """Run Darbot Jr in your local environment. This is the default executable `jr`."""
-# Read this first: https://darbotlm.github.io/darbot-jr/latest/usage/jr/  (usage)
+# Read this first: https://github.com/DarbotLM/darbot-jr/blob/main/docs/usage/jr.md
 
 import os
 from pathlib import Path
@@ -20,13 +20,13 @@ from jrsweagent.run.utilities.config import configure_if_first_time
 from jrsweagent.utils.serialize import UNSET, recursive_merge
 
 DEFAULT_CONFIG_FILE = Path(os.getenv("DARBOT_JR_CONFIG_PATH", builtin_config_dir / "jr.yaml"))
-DEFAULT_OUTPUT_FILE = global_config_dir / "last_mini_run.traj.json"
+DEFAULT_OUTPUT_FILE = global_config_dir / "last_jr_run.traj.json"
 
 
 _HELP_TEXT = """Run Darbot Jr in your local environment.
 
 [not dim]
-More information about the usage: [bold green]https://darbotlm.github.io/darbot-jr/latest/usage/jr/[/bold green]
+More information about the usage: [bold green]https://github.com/DarbotLM/darbot-jr/blob/main/docs/usage/jr.md[/bold green]
 [/not dim]
 """
 

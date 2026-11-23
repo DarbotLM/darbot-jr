@@ -1,5 +1,5 @@
 site_name: Darbot Jr documentation
-site_url: https://darbotlm.github.io/darbot-jr
+site_url: https://github.com/DarbotLM/darbot-jr/tree/main/docs
 theme:
   name: material
   icon:
