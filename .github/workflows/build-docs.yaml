@@ -1,8 +1,5 @@
 name: build-docs
 
-permissions:
-  contents: read
-
 on:
   push:
     branches:
