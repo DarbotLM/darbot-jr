@@ -7,9 +7,9 @@
 !!! abstract "Understanding the default agent"
 
     * This guide shows the control flow of the default agent.
-    * After this, you're ready to [remix & extend mini](cookbook.md)
+    * After this, you're ready to [remix & extend jr](cookbook.md)
 
-The following diagram shows the control flow of the mini agent:
+The following diagram shows the control flow of the jr agent:
 
 ```mermaid
 flowchart TD
@@ -49,11 +49,11 @@ And here is the code that implements it:
 
 ??? note "Default agent class"
 
-    - [Read on GitHub](https://github.com/swe-agent/mini-swe-agent/blob/main/src/minisweagent/agents/default.py)
+    - [Read on GitHub](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/agents/default.py)
     - [API reference](../reference/agents/default.md)
 
     ```python
-    --8<-- "src/minisweagent/agents/default.py"
+    --8<-- "src/jrsweagent/agents/default.py"
     ```
 
 Essentially, `DefaultAgent.run` calls `DefaultAgent.step` in a loop until the agent has finished its task.

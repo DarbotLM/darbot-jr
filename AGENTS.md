@@ -1,16 +1,16 @@
-# mini-SWE-agent overview
+# Darbot Jr overview
 
-- mini-SWE-agent implements an AI software engineering agent that solves github issues and similar programming challenges
+- Darbot Jr implements an AI software engineering agent that solves github issues and similar programming challenges
 - The idea of this project is to write the simplest, smallest, most readable agent.
 
 The project is structured as
 
 ```bash
-minisweagent/__init__  # Protocols/interfaces for all base classes
-minisweagent/agents  # Agent control flow & loop
-minisweagent/environments  # Executing agent actions
-minisweagent/models  # LM interfaces
-minisweagent/run  # Run scripts that serve as an entry point
+jrsweagent/__init__  # Protocols/interfaces for all base classes
+jrsweagent/agents  # Agent control flow & loop
+jrsweagent/environments  # Executing agent actions
+jrsweagent/models  # LM interfaces
+jrsweagent/run  # Run scripts that serve as an entry point
 ```
 
 - The project embraces polymorphism: Every individual class should be simple, but we offer alternatives
@@ -103,7 +103,7 @@ Use these component names in parentheses for `fix`, `feat`, `enh`, and `ref` com
 - `agents` - Changes to agent classes (default, interactive, multimodal)
 - `env` - Changes to environments (docker, local, singularity, bubblewrap, swerex)
 - `config` - Changes to configuration files or config handling
-- `run` - Changes to run scripts (mini, hello_world)
+- `run` - Changes to run scripts (jr, hello_world)
 - `benchmarks` - Changes to benchmark runners (swebench, inspector)
 - `cli` - Changes to CLI argument handling
 - `deps` - Dependency updates

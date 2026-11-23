@@ -2,30 +2,30 @@
 
 !!! note "DefaultAgent class"
 
-    - [Read on GitHub](https://github.com/swe-agent/mini-swe-agent/blob/main/src/minisweagent/agents/default.py)
+    - [Read on GitHub](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/agents/default.py)
 
     ??? note "Full source code"
 
         ```python
-        --8<-- "src/minisweagent/agents/default.py"
+        --8<-- "src/jrsweagent/agents/default.py"
         ```
 
 !!! tip "Understanding the control flow"
 
     Check out the [control flow guide](../../advanced/control_flow.md) for a visual explanation of the agent's control flow.
 
-::: minisweagent.agents.default.AgentConfig
+::: jrsweagent.agents.default.AgentConfig
 
-::: minisweagent.agents.default.DefaultAgent
+::: jrsweagent.agents.default.DefaultAgent
 
-::: minisweagent.exceptions.InterruptAgentFlow
+::: jrsweagent.exceptions.InterruptAgentFlow
 
-::: minisweagent.exceptions.Submitted
+::: jrsweagent.exceptions.Submitted
 
-::: minisweagent.exceptions.LimitsExceeded
+::: jrsweagent.exceptions.LimitsExceeded
 
-::: minisweagent.exceptions.FormatError
+::: jrsweagent.exceptions.FormatError
 
-::: minisweagent.exceptions.UserInterruption
+::: jrsweagent.exceptions.UserInterruption
 
 {% include-markdown "../../_footer.md" %}

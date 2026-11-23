@@ -1,8 +1,8 @@
 # Cookbook
 
-!!! abstract "Remixing & extending mini"
+!!! abstract "Remixing & extending jr"
 
-    * This guide shows how to mix the different components of the `mini` agent to create your own custom version.
+    * This guide shows how to mix the different components of the `jr` agent to create your own custom version.
     * You might want to first take a look at the [control flow of the default agent](control_flow.md) first
 
 
@@ -11,21 +11,21 @@
     Make sure to follow the dev setup instructions in [quickstart.md](../quickstart.md).
 
 We provide several different entry points to the agent,
-for example [hello world](https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/run/hello_world.py),
-or the [default when calling `mini`](https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/run/mini.py).
+for example [hello world](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/run/hello_world.py),
+or the [default when calling `jr`](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/run/jr.py).
 
 Want to cook up your custom version and the config is not enough?
 Just follow the recipe below:
 
-1. What's the control flow you need? Pick an [agent class](https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/agents) (e.g., [simplest example](https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/agents/default.py), [with human in the loop](https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/agents/interactive.py))
-2. How should actions be executed? Pick an [environment class](https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/environments) (e.g., [local](https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/environments/local.py), or [docker](https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/environments/docker.py))
-3. How is the LM queried? Pick a [model class](https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/models) (e.g., [litellm](https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/models/litellm_model.py))
-4. How to invoke the agent? Bind them all together in a [run script](https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/run), possibly reading from a [config](https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/config) (e.g., [hello world](https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/run/hello_world.py), or [`mini` entry point](https://github.com/SWE-agent/mini-swe-agent/blob/main/src/minisweagent/run/mini.py))
+1. What's the control flow you need? Pick an [agent class](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/agents) (e.g., [simplest example](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/agents/default.py), [with human in the loop](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/agents/interactive.py))
+2. How should actions be executed? Pick an [environment class](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/environments) (e.g., [local](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/environments/local.py), or [docker](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/environments/docker.py))
+3. How is the LM queried? Pick a [model class](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/models) (e.g., [litellm](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/models/litellm_model.py))
+4. How to invoke the agent? Bind them all together in a [run script](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/run), possibly reading from a [config](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/config) (e.g., [hello world](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/run/hello_world.py), or [`jr` entry point](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/run/jr.py))
 
 We aim to keep all of these components very simple, but offer lots of choice between them -- enough to cover a broad range of
 things that you might want to do.
 
-You can override the default entry point by setting the `MSWEA_DEFAULT_RUN` environment variable to the import path of your run script.
+You can override the default entry point by setting the `DARBOT_JR_DEFAULT_RUN` environment variable to the import path of your run script.
 
 ## Hello world
 
@@ -38,9 +38,9 @@ See [Python bindings](../usage/python_bindings.md) for the most basic example.
 === "Hello world (use automatic model selection)"
 
     ```python
-    from minisweagent.agents.default import DefaultAgent
-    from minisweagent.models import get_model
-    from minisweagent.environments.local import LocalEnvironment
+    from jrsweagent.agents.default import DefaultAgent
+    from jrsweagent.models import get_model
+    from jrsweagent.environments.local import LocalEnvironment
 
     model_name = "anthropic/claude-sonnet-4-5-20250929"
 
@@ -54,9 +54,9 @@ See [Python bindings](../usage/python_bindings.md) for the most basic example.
 === "Hello world (Litellm)"
 
     ```python
-    from minisweagent.agents.default import DefaultAgent
-    from minisweagent.models.litellm_model import LitellmModel
-    from minisweagent.environments.local import LocalEnvironment
+    from jrsweagent.agents.default import DefaultAgent
+    from jrsweagent.models.litellm_model import LitellmModel
+    from jrsweagent.environments.local import LocalEnvironment
 
     model_name = "gpt-4o"
 
@@ -72,7 +72,7 @@ See [Python bindings](../usage/python_bindings.md) for the most basic example.
 === "Hello world with local execution"
 
     ```python
-    from minisweagent.environments.local import LocalEnvironment
+    from jrsweagent.environments.local import LocalEnvironment
 
     agent = DefaultAgent(
         LitellmModel(model_name=model_name),
@@ -83,7 +83,7 @@ See [Python bindings](../usage/python_bindings.md) for the most basic example.
 === "Hello world with docker execution"
 
     ```python
-    from minisweagent.environments.docker import DockerEnvironment
+    from jrsweagent.environments.docker import DockerEnvironment
 
     agent = DefaultAgent(
         LitellmModel(model_name=model_name),
@@ -96,9 +96,9 @@ See [Python bindings](../usage/python_bindings.md) for the most basic example.
 === "Default agent"
 
     ```python
-    from minisweagent.agents.default import DefaultAgent
-    from minisweagent.models import get_model
-    from minisweagent.environments.local import LocalEnvironment
+    from jrsweagent.agents.default import DefaultAgent
+    from jrsweagent.models import get_model
+    from jrsweagent.environments.local import LocalEnvironment
 
     agent = DefaultAgent(
         get_model(input_model_name=model_name),
@@ -109,9 +109,9 @@ See [Python bindings](../usage/python_bindings.md) for the most basic example.
 === "Human in the loop"
 
     ```python
-    from minisweagent.agents.interactive import InteractiveAgent
-    from minisweagent.models import get_model
-    from minisweagent.environments.local import LocalEnvironment
+    from jrsweagent.agents.interactive import InteractiveAgent
+    from jrsweagent.models import get_model
+    from jrsweagent.environments.local import LocalEnvironment
 
     agent = InteractiveAgent(
         get_model(input_model_name=model_name),
@@ -129,7 +129,7 @@ An agent that uses python function for some actions:
 === "Subclassing the agent"
 
     ```python
-    from minisweagent.agents.default import DefaultAgent
+    from jrsweagent.agents.default import DefaultAgent
     import shlex
 
     def python_function(*args) -> dict:
@@ -153,8 +153,8 @@ An agent that uses python function for some actions:
 === "Subclassing the environment"
 
     ```python
-    from minisweagent.agents.default import DefaultAgent
-    from minisweagent.environments.local import LocalEnvironment
+    from jrsweagent.agents.default import DefaultAgent
+    from jrsweagent.environments.local import LocalEnvironment
     import shlex
 
     def python_function(*args) -> dict:
@@ -181,8 +181,8 @@ An agent that exits when the `submit` command is issued:
 === "Subclassing the agent"
 
     ```python
-    from minisweagent.agents.default import DefaultAgent
-    from minisweagent.exceptions import Submitted
+    from jrsweagent.agents.default import DefaultAgent
+    from jrsweagent.exceptions import Submitted
 
     class AgentQuitsOnSubmit(DefaultAgent):
         def execute_actions(self, message: dict) -> list[dict]:
@@ -201,9 +201,9 @@ An agent that exits when the `submit` command is issued:
 === "Subclassing the environment"
 
     ```python
-    from minisweagent.agents.default import DefaultAgent
-    from minisweagent.environments.local import LocalEnvironment
-    from minisweagent.exceptions import Submitted
+    from jrsweagent.agents.default import DefaultAgent
+    from jrsweagent.environments.local import LocalEnvironment
+    from jrsweagent.exceptions import Submitted
 
     class EnvironmentQuitsOnSubmit(LocalEnvironment):
         def execute(self, action: dict, cwd: str = "") -> dict:
@@ -228,8 +228,8 @@ An agent that validates actions before execution (also an example of how to use 
 
     ```python
     import re
-    from minisweagent.agents.default import DefaultAgent, AgentConfig
-    from minisweagent.exceptions import FormatError
+    from jrsweagent.agents.default import DefaultAgent, AgentConfig
+    from jrsweagent.exceptions import FormatError
     from pydantic import BaseModel
 
     class ValidatingAgentConfig(AgentConfig):
@@ -258,9 +258,9 @@ An agent that validates actions before execution (also an example of how to use 
 
     ```python
     import re
-    from minisweagent.agents.default import DefaultAgent
-    from minisweagent.environments.local import LocalEnvironment, LocalEnvironmentConfig
-    from minisweagent.models.litellm_model import LitellmModel
+    from jrsweagent.agents.default import DefaultAgent
+    from jrsweagent.environments.local import LocalEnvironment, LocalEnvironmentConfig
+    from jrsweagent.models.litellm_model import LitellmModel
 
     class EnvironmentWithForbiddenPatternsConfig(LocalEnvironmentConfig):
         forbidden_patterns: list[str] = [
@@ -286,9 +286,9 @@ An agent that validates actions before execution (also an example of how to use 
     )
     ```
 
-### Running mini-swe-agent on Ray
+### Running Darbot Jr on Ray
 
 [This blog post](https://www.anyscale.com/blog/massively-parallel-agentic-simulations-with-ray)
-describes how to parallelize mini-swe-agent runs with Ray.
+describes how to parallelize Darbot Jr runs with Ray.
 
 {% include-markdown "_footer.md" %}

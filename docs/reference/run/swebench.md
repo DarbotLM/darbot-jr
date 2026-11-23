@@ -2,8 +2,8 @@
 
 !!! note "SWE-bench run script"
 
-    - [Read on GitHub](https://github.com/swe-agent/mini-swe-agent/blob/main/src/minisweagent/run/benchmarks/swebench.py)
+    - [Read on GitHub](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/run/benchmarks/swebench.py)
 
-::: minisweagent.run.benchmarks.swebench
+::: jrsweagent.run.benchmarks.swebench
 
 {% include-markdown "../../_footer.md" %}

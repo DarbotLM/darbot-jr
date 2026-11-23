@@ -1,9 +1,9 @@
-# `mini-extra config`
+# `jr-extra config`
 
 !!! abstract "Overview"
 
-    * `mini-extra config` is a utility to manage the global configuration file.
-    * Quickly start the it with `mini-extra config` or `mini-e config`.
+    * `jr-extra config` is a utility to manage the global configuration file.
+    * Quickly start the it with `jr-extra config` or `jr-e config`.
 
 ## Commands
 
@@ -12,7 +12,7 @@
 Interactive setup wizard that helps you configure your default model and API keys.
 
 ```bash
-mini-extra config setup
+jr-extra config setup
 ```
 
 This will prompt you for:
@@ -26,9 +26,9 @@ Set a specific key in the global config file.
 
 ```bash
 # example: set default model
-mini-extra config set MSWEA_MODEL_NAME anthropic/claude-sonnet-4-5-20250929
+jr-extra config set DARBOT_JR_MODEL_NAME anthropic/claude-sonnet-4-5-20250929
 # or interactively
-mini-extra config set
+jr-extra config set
 ```
 
 ### `unset`
@@ -36,7 +36,7 @@ mini-extra config set
 Remove a key from the global config file.
 
 ```bash
-mini-extra config unset MSWEA_MODEL_NAME
+jr-extra config unset DARBOT_JR_MODEL_NAME
 ```
 
 ### `edit`
@@ -44,7 +44,7 @@ mini-extra config unset MSWEA_MODEL_NAME
 Open the global config file in your default editor (uses `$EDITOR` or `nano`).
 
 ```bash
-mini-extra config edit
+jr-extra config edit
 ```
 
 ## Configuration keys
@@ -55,11 +55,11 @@ For more configuration options, see [global configuration](../advanced/global_co
 
 ??? note "Run script"
 
-    - [Read on GitHub](https://github.com/swe-agent/mini-swe-agent/blob/main/src/minisweagent/run/utilities/config.py)
+    - [Read on GitHub](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/run/utilities/config.py)
     - [API reference](../reference/run/config.md)
 
     ```python
-    --8<-- "src/minisweagent/run/utilities/config.py"
+    --8<-- "src/jrsweagent/run/utilities/config.py"
     ```
 
 {% include-markdown "../_footer.md" %}

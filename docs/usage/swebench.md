@@ -3,14 +3,14 @@
 !!! abstract "Overview"
 
     * We provide two scripts to run on the [SWE-bench](https://www.swebench.com/) benchmark.
-    * `mini-extra swebench` runs on all task instances in batch mode.
-    * `mini-extra swebench-single` runs on a single task instance with interactivity (useful for debugging).
+    * `jr-extra swebench` runs on all task instances in batch mode.
+    * `jr-extra swebench-single` runs on a single task instance with interactivity (useful for debugging).
     * You can also take a look at the runscripts to figure out how to build your own batch processing pipeline.
 
 <figure markdown="span">
   <div class="gif-container gif-container-styled" data-glightbox-disabled>
-    <img src="https://github.com/SWE-agent/swe-agent-media/blob/main/media/mini/png/swebench.png?raw=true"
-         data-gif="https://github.com/SWE-agent/swe-agent-media/blob/main/media/mini/gif/swebench.gif?raw=true"
+    <img src="https://github.com/SWE-agent/swe-agent-media/blob/main/media/jr/png/swebench.png?raw=true"
+         data-gif="https://github.com/SWE-agent/swe-agent-media/blob/main/media/jr/gif/swebench.gif?raw=true"
          alt="swebench" data-glightbox="false" width="600" />
   </div>
 </figure>
@@ -32,11 +32,11 @@
         Batch mode runs on all task instances in parallel.
 
         ```bash
-        mini-extra swebench --help
+        jr-extra swebench --help
         # or
-        python src/minisweagent/run/benchmarks/swebench.py --help
+        python src/jrsweagent/run/benchmarks/swebench.py --help
         # Example:
-        mini-extra swebench \
+        jr-extra swebench \
             --model anthropic/claude-sonnet-4-5-20250929 \
             --subset verified \
             --split test \
@@ -68,17 +68,17 @@
         Single instance mode runs on a single task instance with interactivity. This is meant for debugging, and so unlike the batch mode command above, this will not produce a preds.json file.
 
         ```bash
-        mini-extra swebench-single --help
+        jr-extra swebench-single --help
         # or
-        python src/minisweagent/run/benchmarks/swebench_single.py --help
+        python src/jrsweagent/run/benchmarks/swebench_single.py --help
         # Example:
-        mini-extra swebench-single \
+        jr-extra swebench-single \
             --subset verified \
             --split test \
             --model anthropic/claude-sonnet-4-5-20250929 \
             -i sympy__sympy-15599
         # or
-        mini-extra swebench-single \
+        jr-extra swebench-single \
             --subset verified \
             --split test \
             -m anthropic/claude-sonnet-4-5-20250929 \
@@ -138,7 +138,7 @@
 
 > Can I set global cost limits?
 
-Yes, you can set global cost limits with the `MSWEA_GLOBAL_CALL_LIMIT` and `MSWEA_GLOBAL_COST_LIMIT` environment variables/global config.
+Yes, you can set global cost limits with the `DARBOT_JR_GLOBAL_CALL_LIMIT` and `DARBOT_JR_GLOBAL_COST_LIMIT` environment variables/global config.
 See [global configuration](../advanced/global_configuration.md) for more details.
 
 > What happens to uncompleted tasks when I abort with KeyboardInterrupt?
@@ -200,28 +200,28 @@ See [this guide](../advanced/environments.md) for more details.
 
 ??? note "Default config"
 
-    - [Read on GitHub](https://github.com/swe-agent/mini-swe-agent/blob/main/src/minisweagent/config/benchmarks/swebench.yaml)
+    - [Read on GitHub](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/config/benchmarks/swebench.yaml)
 
     ```yaml
-    --8<-- "src/minisweagent/config/benchmarks/swebench.yaml"
+    --8<-- "src/jrsweagent/config/benchmarks/swebench.yaml"
     ```
 
 ??? note "`swebench.py` run script"
 
-    - [Read on GitHub](https://github.com/swe-agent/mini-swe-agent/blob/main/src/minisweagent/run/benchmarks/swebench.py)
+    - [Read on GitHub](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/run/benchmarks/swebench.py)
     - [API reference](../reference/run/swebench.md)
 
     ```python
-    --8<-- "src/minisweagent/run/benchmarks/swebench.py"
+    --8<-- "src/jrsweagent/run/benchmarks/swebench.py"
     ```
 
 ??? note "`swebench_single.py` run script"
 
-    - [Read on GitHub](https://github.com/swe-agent/mini-swe-agent/blob/main/src/minisweagent/run/benchmarks/swebench_single.py)
+    - [Read on GitHub](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/run/benchmarks/swebench_single.py)
     - [API reference](../reference/run/swebench_single.md)
 
     ```python
-    --8<-- "src/minisweagent/run/benchmarks/swebench_single.py"
+    --8<-- "src/jrsweagent/run/benchmarks/swebench_single.py"
     ```
 
 {% include-markdown "../_footer.md" %}

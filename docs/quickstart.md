@@ -4,61 +4,61 @@
 
     === "pip"
 
-        Use pip to install `mini` in your current environment:
+        Use pip to install `jr` in your current environment:
 
         ```bash
-        pip install mini-swe-agent
+        pip install Darbot Jr
         ```
 
         And try our command line interface
 
         ```bash
-        mini  # CLI
-        mini-extra  # extra utilities
+        jr  # CLI
+        jr-extra  # extra utilities
         ```
 
     === "uv (isolated)"
 
-        Use `uv`/`uvx` ([installation](https://docs.astral.sh/uv/getting-started/installation/)) to directly run the `mini` CLI.
-        Use this if you're only interested in the CLI but don't need python bindings (`mini` will be installed in an anonymous virtual environment).
+        Use `uv`/`uvx` ([installation](https://docs.astral.sh/uv/getting-started/installation/)) to directly run the `jr` CLI.
+        Use this if you're only interested in the CLI but don't need python bindings (`jr` will be installed in an anonymous virtual environment).
 
         Quickly install + run:
 
         ```bash
-        uvx mini-swe-agent  # CLI
-        uvx --from mini-swe-agent mini-extra  # extra utilities
+        uvx Darbot Jr  # CLI
+        uvx --from Darbot Jr jr-extra  # extra utilities
         ```
 
         Permanently install
 
         ```bash
-        uv tool install mini-swe-agent
+        uv tool install Darbot Jr
         # then
-        mini  # CLI
-        mini-extra  # extra utilities
+        jr  # CLI
+        jr-extra  # extra utilities
         ```
 
     === "pipx (isolated)"
 
-        Use pipx ([installation](https://pipx.pypa.io/stable/installation/)) to directly run the `mini` CLI.
-        Use this if you're only interested in the CLI but don't need python bindings (`mini` will be installed in an anonymous virtual environment).
+        Use pipx ([installation](https://pipx.pypa.io/stable/installation/)) to directly run the `jr` CLI.
+        Use this if you're only interested in the CLI but don't need python bindings (`jr` will be installed in an anonymous virtual environment).
 
         Quick install + run:
 
         ```bash
         # CLI
-        pipx run mini-swe-agent
+        pipx run Darbot Jr
         # Extra utilities
-        pipx run --spec mini-swe-agent mini-extra
+        pipx run --spec Darbot Jr jr-extra
         ```
 
         or for a persistent installation (recommended):
 
         ```bash
-        pipx install mini-swe-agent
+        pipx install Darbot Jr
         # then
-        mini  # CLI
-        mini-extra  # extra utilities
+        jr  # CLI
+        jr-extra  # extra utilities
         ```
 
         If the invocation doesn't immediately work, you might need to run `pipx ensurepath`.
@@ -68,22 +68,22 @@
         For development or if you want to customize the agent:
 
         ```bash
-        git clone https://github.com/SWE-agent/mini-swe-agent.git
-        cd mini-swe-agent
+        git clone https://github.com/DarbotLM/darbot-jr.git
+        cd Darbot Jr
         pip install -e .
         ```
 
         Then run:
 
         ```bash
-        mini  # CLI
-        mini-extra  # extra utilities
+        jr  # CLI
+        jr-extra  # extra utilities
         ```
 
-        Or pick a [run script](https://github.com/SWE-agent/mini-swe-agent/tree/main/src/minisweagent/run):
+        Or pick a [run script](https://github.com/DarbotLM/darbot-jr/tree/main/src/jrsweagent/run):
 
         ```bash
-        python src/minisweagent/run/hello_world.py
+        python src/jrsweagent/run/hello_world.py
         ```
 
         If you are planning to contribute, please also install the dev dependencies
@@ -103,7 +103,7 @@
 
 !!! note "Changelog"
 
-    Please see the [github release notes](https://github.com/SWE-agent/mini-swe-agent/releases) for recent changes.
+    Please see the [github release notes](https://github.com/DarbotLM/darbot-jr/releases) for recent changes.
 
 !!! info "Upgrading to v2?"
 
@@ -111,7 +111,7 @@
 
 !!! example "Example Prompts"
 
-    Try mini-SWE-agent with these example prompts:
+    Try Darbot Jr with these example prompts:
 
     - Implement a Sudoku solver in python in the `sudoku` folder. Make sure the codebase is modular and well tested with pytest.
     - Please run pytest on the current project, discover failing unittests and help me fix them. Always make sure to test the final solution.
@@ -119,9 +119,9 @@
 
 ## Models
 
-!!! note "Models should be set up the first time you run `mini`"
+!!! note "Models should be set up the first time you run `jr`"
 
-    * If you missed the setup wizard, just run `mini-extra config setup`
+    * If you missed the setup wizard, just run `jr-extra config setup`
     * For more information, please check the [model setup quickstart](models/quickstart.md).
     * If you want to use local models, please check this [guide](models/local_models.md).
 

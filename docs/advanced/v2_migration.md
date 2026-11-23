@@ -2,9 +2,9 @@
 
 !!! danger "Breaking Changes"
 
-    **mini-swe-agent v2.0** brings major improvements but requires migration.
-    To stay with v1.x, pin your dependency: `mini-swe-agent~=1.0`.
-    See the [v1 documentation](https://mini-swe-agent.com/v1/) or the [v1 branch on GitHub](https://github.com/SWE-agent/mini-swe-agent/tree/v1).
+    **Darbot Jr v2.0** brings major improvements but requires migration.
+    To stay with v1.x, pin your dependency: `Darbot Jr~=1.0`.
+    See the [v1 documentation](https://darbotlm.github.io/darbot-jr/v1/) or the [v1 branch on GitHub](https://github.com/DarbotLM/darbot-jr/tree/v1).
 
 ## What's new
 
@@ -13,7 +13,7 @@
 
 ## What do I need to change?
 
-> I only use the mini CLI with default configs
+> I only use the jr CLI with default configs
 
 No changes needed.
 
@@ -45,11 +45,11 @@ If you only changed `system_template` and `instance_template`, no changes needed
 
 **Code block format changed:**
 
-Default action regex changed from `` ```bash `` to `` ```mswea_bash_command `` to avoid conflicts with bash examples in prompts.
+Default action regex changed from `` ```bash `` to `` ```darbotjr_bash_command `` to avoid conflicts with bash examples in prompts.
 
 **Completion signal changed:**
 
-From `echo MINI_SWE_AGENT_FINAL_OUTPUT` to `echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT`.
+From `echo jr_swe_agent_FINAL_OUTPUT` to `echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT`.
 
 **New structure:**
 
@@ -71,9 +71,9 @@ model:
 **CLI now supports multiple configs and key-value overrides:**
 
 ```bash
-mini -c mini.yaml -c model.model_kwargs.temperature=0.5
-mini -c swebench.yaml -c agent.step_limit=100
-mini -c mini.yaml -c /path/to/model.yaml
+jr -c jr.yaml -c model.model_kwargs.temperature=0.5
+jr -c swebench.yaml -c agent.step_limit=100
+jr -c jr.yaml -c /path/to/model.yaml
 ```
 
 !!! warning
@@ -90,17 +90,17 @@ v2.0 uses native tool calling by default (instead of regex-based text parsing).
 
 **How to use it:**
 
-Tool calling is the default. The CLI uses `mini.yaml` and `swebench.yaml` which are configured for tool calling.
+Tool calling is the default. The CLI uses `jr.yaml` and `swebench.yaml` which are configured for tool calling.
 
 ```bash
 # Default (tool calling)
-mini
-python -m minisweagent.run.benchmarks.swebench
-mini-extra swebench
+jr
+python -m jrsweagent.run.benchmarks.swebench
+jr-extra swebench
 
 # Text-based parsing
-mini-extra swebench -c swebench_backticks.yaml
-mini -c mini_textbased.yaml
+jr-extra swebench -c swebench_backticks.yaml
+jr -c jr_textbased.yaml
 ```
 
 **For custom configs:**
@@ -113,7 +113,7 @@ model:
 # or for text-based:
 model:
   model_class: litellm_textbased
-  action_regex: "```mswea_bash_command\\s*\\n(.*?)\\n```"
+  action_regex: "```darbotjr_bash_command\\s*\\n(.*?)\\n```"
 ```
 
 ## Trajectory format
@@ -133,10 +133,10 @@ In other words: the exact message structure depends on the model you use.
 
 **Removed features:**
 
-- **"Visual" UI**: The `-v` flag for the alternate, textual based `mini -v` CLI is no longer supported. This was a tough decision to make, but in the end the visual mode didn't see the adoption we wanted and is significantly more complex to maintain than the default interface.
+- **"Visual" UI**: The `-v` flag for the alternate, textual based `jr -v` CLI is no longer supported. This was a tough decision to make, but in the end the visual mode didn't see the adoption we wanted and is significantly more complex to maintain than the default interface.
 - **Rotating API keys**: `ANTHROPIC_API_KEYS` with `::` separator no longer supported. Use single `ANTHROPIC_API_KEY`.
-- **`github_issue` run script**: The dedicated `github_issue.py` run script was removed. Use the `mini` CLI instead.
-- **`MSWEA_MODEL_API_KEY` environment variable**: No longer used to override API keys.
+- **`github_issue` run script**: The dedicated `github_issue.py` run script was removed. Use the `jr` CLI instead.
+- **`DARBOT_JR_MODEL_API_KEY` environment variable**: No longer used to override API keys.
 
 **Removed model classes:**
 
@@ -159,7 +159,7 @@ In other words: the exact message structure depends on the model you use.
 
 **New environment:**
 
-- **`swerex_modal`**: Run environments on Modal (requires `pip install mini-swe-agent[modal]`)
+- **`swerex_modal`**: Run environments on Modal (requires `pip install Darbot Jr[modal]`)
 
 ## Architecture changes
 
@@ -173,8 +173,8 @@ In other words: the exact message structure depends on the model you use.
 
 ### Protocol changes
 
-If you want to write a custom Model, Environment or Agent compatible with `mini-swe-agent`, you don't need to subclass anything.
-Rather, mini-swe-agent fully uses duck typing with [protocols](https://typing.python.org/en/latest/spec/protocol.html)
+If you want to write a custom Model, Environment or Agent compatible with `Darbot Jr`, you don't need to subclass anything.
+Rather, Darbot Jr fully uses duck typing with [protocols](https://typing.python.org/en/latest/spec/protocol.html)
 (tl;dr: as long as you implement the required methods, you can use any class as a Model, Environment or Agent).
 Config options like `--config-class` also take full import classes, so you can put your classes wherever you want.
 
@@ -218,7 +218,7 @@ def save(self, path: Path | None, *extra_dicts) -> dict: ...
 
 ### Exception changes
 
-All flow control exceptions now inherit from `InterruptAgentFlow` and moved to `minisweagent.exceptions`:
+All flow control exceptions now inherit from `InterruptAgentFlow` and moved to `jrsweagent.exceptions`:
 
 ```python
 InterruptAgentFlow (base)
@@ -236,10 +236,10 @@ InterruptAgentFlow (base)
 
 ```python
 # Old
-from minisweagent.agents.default import Submitted, FormatError
+from jrsweagent.agents.default import Submitted, FormatError
 
 # New
-from minisweagent.exceptions import Submitted, FormatError
+from jrsweagent.exceptions import Submitted, FormatError
 ```
 
 ### Agent.run() return value

@@ -2,8 +2,8 @@
 
 !!! note "ProgramBench run script"
 
-    - [Read on GitHub](https://github.com/swe-agent/mini-swe-agent/blob/main/src/minisweagent/run/benchmarks/programbench.py)
+    - [Read on GitHub](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/run/benchmarks/programbench.py)
 
-::: minisweagent.run.benchmarks.programbench
+::: jrsweagent.run.benchmarks.programbench
 
 {% include-markdown "../../_footer.md" %}

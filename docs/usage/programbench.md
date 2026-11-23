@@ -2,7 +2,7 @@
 
 !!! abstract "Overview"
 
-    * `mini-extra programbench` runs the agent on all [ProgramBench](https://github.com/facebookresearch/programbench) task instances in batch mode.
+    * `jr-extra programbench` runs the agent on all [ProgramBench](https://github.com/facebookresearch/programbench) task instances in batch mode.
     * Output is directly compatible with `programbench eval`.
     * ProgramBench is a reverse-engineering benchmark: the agent is dropped into a container
       with a compiled binary and must produce a fresh source codebase that reproduces the
@@ -25,11 +25,11 @@
 !!! tip "Quickstart"
 
     ```bash
-    mini-extra programbench --help
+    jr-extra programbench --help
     # or
-    python src/minisweagent/run/benchmarks/programbench.py --help
+    python src/jrsweagent/run/benchmarks/programbench.py --help
     # Example:
-    mini-extra programbench \
+    jr-extra programbench \
         --model anthropic/claude-sonnet-4-5-20250929 \
         --workers 4
     ```
@@ -85,19 +85,19 @@ docker troubleshooting, singularity backend) apply equally to ProgramBench.
 
 ??? note "Default config"
 
-    - [Read on GitHub](https://github.com/swe-agent/mini-swe-agent/blob/main/src/minisweagent/config/benchmarks/programbench.yaml)
+    - [Read on GitHub](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/config/benchmarks/programbench.yaml)
 
     ```yaml
-    --8<-- "src/minisweagent/config/benchmarks/programbench.yaml"
+    --8<-- "src/jrsweagent/config/benchmarks/programbench.yaml"
     ```
 
 ??? note "`programbench.py` run script"
 
-    - [Read on GitHub](https://github.com/swe-agent/mini-swe-agent/blob/main/src/minisweagent/run/benchmarks/programbench.py)
+    - [Read on GitHub](https://github.com/DarbotLM/darbot-jr/blob/main/src/jrsweagent/run/benchmarks/programbench.py)
     - [API reference](../reference/run/programbench.md)
 
     ```python
-    --8<-- "src/minisweagent/run/benchmarks/programbench.py"
+    --8<-- "src/jrsweagent/run/benchmarks/programbench.py"
     ```
 
 {% include-markdown "../_footer.md" %}
