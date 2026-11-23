@@ -1,5 +1,8 @@
 name: Pylint
 
+permissions:
+  contents: read
+
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
